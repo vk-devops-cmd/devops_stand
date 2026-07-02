@@ -1,0 +1,7 @@
+.env
+nginx/certs/*.crt
+nginx/certs/*.key
+__pycache__/
+*.pyc
+.venv
+.idea

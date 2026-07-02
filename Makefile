@@ -1,4 +1,7 @@
-.PHONY: certs build healthy check start
+.PHONY: env certs build healthy check start
+
+env:
+	cp .env_template .env
 
 certs:
 	./gen-certs.sh localhost
@@ -18,4 +21,4 @@ check:
 	@echo ""
 	curl -k https://localhost/
 
-start: certs build healthy check
+start: env certs build healthy check

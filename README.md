@@ -31,6 +31,13 @@ choco install make
 make start
 ```
 
+# Проверка работы
+Выполните запрос к локальному шлюзу (флаг -k необходим для self-signed сертификата):
+
+```Bash
+curl -k https://localhost/
+```
+
 Ожидаемый ответ:
 ```json
 {
